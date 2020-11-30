@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My First WebPage</title>
+        <meta name="viewport" content="width=device-width, intial-scale=1">
+        
+    </head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .left{
+            min-height: 400vh;
+            width:25%;
+            background-color: #808080;
+            position: fixed;
+            float:left;
+            clear:both;
+        }
+        .Image {
+            background-color: #ffffff;
+            padding: 20px;
+            
+            
+        }
+        .Image1{
+            background-attachment: fixed;
+            width:100%;
+            margin:10px;
+        }
+        .div {
+            background-color:#a9a9a9;
+            color: #ffffff;
+            cursor:pointer;
+            text-align: center;
+            font-family: tahoma;
+            padding:8px;
+            
+        }
+        .div1 {
+            border-left: 5px solid #00ffff;
+            text-decoration: none;
+           
+        }
+        .div2 {
+            border-left: 5px solid #ffff00;
+        }
+        .div3 {
+            border-left: 5px solid #ee82ee;
+        }
+        .div4 {
+            border-left: 5px solid #008000;
+        }
+        .div5 {
+            border-left: 5px solid #ff0000;
+        }
+        
+        
+        .P {
+            color:#008000;
+            font-family: cursive;
+            text-align: center;
+        }
+        .right {
+            min-height: 400vh;
+            margin-top:0;
+            float:left;
+            margin-left:25%;
+            clear:both;
+        }
+
+        .left, .right{
+            overflow: hidden;
+        }
+        .text {
+            position: absolute;
+            top: 10%;
+            left: 55%;
+            font-weight: bold;
+            font-size:20px;
+            font-family:sans-serif;
+            color:#800000;
+        }  
+        .P1 {
+            position: absolute;
+            top: 20%;
+            left: 44%;
+            font-weight: bold;
+            font-size:20px;
+            font-family:sans-serif;
+            color:#0000ff;
+            text-align: center;
+        }  
+        .P2 {
+            position: absolute;
+            top: 30%;
+            left:58%;
+            font-weight: bold;
+            font-size:20px;
+            color: #ffffff;
+            padding: 20px;
+            display: inline;
+            font-size: 16px;
+            cursor: pointer;
+            font-family: sans-serif;
+            background-color: #00ffff;
+        }
+        .Text1 {
+            text-align: center;
+            padding:40px;
+            color:#00ffff;
+            font-weight: bold;
+            font-family:georgia;
+            font-size: 20px;
+        }
+        .P3{
+            text-align: center;
+            font-family:georgia;
+        
+        }
+        .AboutUs{
+            margin:20px;
+            padding:20px;
+            display:inline;
+            float:left;
+        }
+        .Text2{
+            font-weight: bold;
+            color: #ffffff;
+            padding:20px;
+            margin:5px;
+            display:inline;
+            font-size:16px;
+            font-family:sans-serif;
+            background-color: #ffa500;
+            
+        }
+        .Template2 { 
+            padding: 20px;
+            display: inline-block;
+            margin: 30px;
+        }
+        
+        .Image2{
+            height:50%;
+            padding:20px;
+            float: left;
+            margin:10px;
+        }
+        .Text3{
+            color:#ffa500;
+            font-weight:bold;
+            font-size: 15px;
+            font-family:verdana;
+            text-align: center;
+        }
+        .Image3{
+            
+            height:50%;
+            padding:20px;
+            float: left;
+            margin:10px;
+        }
+        .Text4{
+            color:#ffa500;
+            font-weight:bold;
+            font-size: 15px;
+            font-family:verdana;
+            text-align: center;
+        }
+        .Image4{
+            
+            height:50%;
+            padding:20px;
+            float: left;
+            margin:10px;
+        }
+        .Text5{
+            color:#ffa500;
+            font-weight:bold;
+            font-size: 15px;
+            font-family:verdana;
+            text-align: center;
+        }
+        .Txt1, .Txt2, .Txt3 {
+            text-align: center;
+            font-family:verdana;
+        }
+        .Text6{
+            margin:40px;
+        }
+        .txt1{
+            color:#ffa500;
+            font-size: 20px;
+            font-family:verdana;
+        }
+        .txt2{
+            font-size: 18px;
+            font-family:verdana;
+            word-spacing:10px;
+        }
+        .system{
+            float:right;
+            margin: 10px;
+           
+        }
+        .Services{
+           
+            margin:20px;
+            padding: 20px;
+            display: inline;
+            float:left;
+        
+        }
+        .Text7{
+            font-weight: bold;
+            font-size:20px;
+            color: #ffffff;
+            padding:20px;
+            margin:5px;
+            display: inline;
+            font-size: 16px;
+            font-family: sans-serif;
+            background-color: #ee82ee;
+            
+        }
+        .Template3 { 
+            padding: 20px;
+            display: inline;
+            margin:20px;
+            float: left;
+        }
+        .Text8, .Text9, .Text10 {
+            background-color: #ee82ee; 
+            font-family:verdana;
+            text-align: center;
+            color:white;
+        }
+        .Text11{
+            float: left;
+            margin:40px;
+            width:100%;
+        }
+        .Progress{
+            color:#ee82ee;
+            font-size: 20px;
+            font-family:verdana;
+          
+          
+        }
+        .txt3{
+            font-size: 18px;
+            font-family:verdana;
+            word-spacing:10px;
+            
+        }
+        .Portfolio{
+            margin:20px;
+            padding:20px;
+            display:inline;
+            float:left;
+        }
+       .Text12{
+            font-weight: bold;
+            color: #ffffff;
+            padding:20px;
+            margin:5px;
+            display: inline;
+            font-size: 16px;
+            font-family: sans-serif;
+            background-color: #00ffff;
+        }
+        .Template4 { 
+            padding: 20px;
+            display:block;
+            margin: 30px;
+            float:left;
+        }
+        .Image5{
+            height:50%;
+            padding:20px;
+            float: left;
+            margin:10px;
+        }
+        .Text13{
+            color:green;
+            font-weight:bold;
+            font-size: 15px;
+            font-family:verdana;
+            text-align: center;
+        }
+        .Image6{
+            
+            height:50%;
+            padding:20px;
+            float: left;
+            margin:10px;
+        }
+        .Text14{
+            color:green;
+            font-weight:bold;
+            font-size: 15px;
+            font-family:verdana;
+            text-align: center;
+        }
+        .Image7{
+            
+            height:50%;
+            padding:20px;
+            float: left;
+            margin:10px;
+        }
+        .Text15{
+            color:green;
+            font-weight:bold;
+            font-size: 15px;
+            font-family:verdana;
+            text-align: center;
+        }
+        .Image8{
+            
+            height:50%;
+            padding:20px;
+            float: left;
+            margin:10px;
+        }
+        .Text16{
+            color:green;
+            font-weight:bold;
+            font-size: 15px;
+            font-family:verdana;
+            text-align: center;
+        }
+        .Image9{
+            
+            height:50%;
+            padding:20px;
+            float: left;
+            margin:10px;
+        }
+        .Text17{
+            color:green;
+            font-weight:bold;
+            font-size: 15px;
+            font-family:verdana;
+            text-align: center;
+        }
+        .Image10{
+            
+            height:50%;
+            padding:20px;
+            float: left;
+            margin:10px;
+        }
+        .Text18{
+            color:green;
+            font-weight:bold;
+            font-size: 15px;
+            font-family:verdana;
+            text-align: center;
+        }
+        .loadmore{
+            display: inline;
+            float: left;
+            margin-left:35%;
+        }
+        .txt4{
+            color: #ffffff;
+            padding:10px;
+            display: inline;
+            float: left;
+            font-size: 16px;
+            cursor: pointer;
+            font-family: verdana;
+            background-color: #00ffff
+        }
+        .Contact{
+            margin:20px;
+            padding: 20px;
+            display: inline;
+            float:left;
+            
+        }
+       .Text19{
+            font-weight: bold;
+            color: #ffffff;
+            padding:20px;
+            margin:5px;
+            display: inline;
+            font-size: 16px;
+            float:left;
+            font-family: sans-serif;
+            background-color: #d21dd8;
+        }
+        .Map{
+            float:left;
+            margin:0 80px;
+            width:100%;
+            
+            
+        }
+        .Form{
+            float:left;
+            margin-left:80px;
+            padding:10px;
+            width:80%;
+        }
+        .Input1{
+            float:left;
+            padding:20px;
+            display:inline;
+            margin:0 40px;
+        }
+        .Input2{
+            float:left;
+            padding:20px;
+            display:inline;
+            margin:0 40px;
+        }
+        .Input3{
+            float:left;
+            padding:20px;
+            display:inline;
+            margin:0 40px;
+        }
+        .Input4{
+            float:left;
+            padding:20px;
+            display:block;
+            margin:0 40px;
+        }
+        .Submit{
+            display: inline;
+            float:left;
+        }
+        .Type{
+            font-weight: bold;
+            padding:20px;
+            margin:5px;
+            display: inline;
+            font-size: 16px;
+            text-align:left;
+        }
+        [type="submit"] {
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: large;
+            font-family:verdana;
+            text-align:left;
+            padding:10px;
+            background-color:#d21dd8;
+            color:white;
+        }
+        .Bottom{
+            
+            display:block;
+            float: left;
+            width:100%;
+            height:200px;
+            background-color:gray;
+          
+
+        }
+        iframe{
+            width:80%;
+        }
+    
+        .clear{
+            clear: both;
+        }
+            
+            
+        @media only screen and (min-width:500px) and (max-width:900px) {
+           body .left .right {
+                width:100%;
+            }
+        }
+        
+    </style>
+<body>
+        <div class="left">
+            <div class="Image">
+                <img src="Circuit.jpg" width="150" height="100">
+                <div class="P">
+                    FLOMIC
+                </div>
+            </div>
+                <div class="clear"></div>
+            <div class="div">
+                <div class="div div1">
+                    <p><a href="#Home" style="text-decoration:none;">HOME</a></p>
+                </div>
+                    <hr>
+                <div class="div div2">
+                    <p><a href="#ABOUTUS" style="text-decoration:none;">ABOUT US</a></p>
+                </div>
+                    <hr>
+                <div class="div div3">
+                    <p><a href="#SERVICES" style="text-decoration:none;">SERVICES</a></p>
+                </div>
+                    <hr>
+                <div class="div div4">
+                    <p><a href="#PROFILEPORTFOLIO" style="text-decoration:none;">PROFILEPORTFOLIO</a></p>
+                </div>
+                    <hr>
+                <div class="div div5">
+                    <p><a href="#CONTACT" style="text-decoration:none;">CONTACT</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+            <a name="Home"></a>
+        <div class="right">
+            <div class="Image1">
+                <img src="Nature.jpg" height="600" width="100%">
+                <div class="text">
+                    REPOSITORY LAYOUT
+                </div>
+                    <br>
+                <div class="P1">
+                         PELLENTESQUE HABITANT MORBI TRISTIQUE SENECTUS ET<br>
+                         <span style="text-align: center;">NETUS MALESUDA FAMES</span>.
+                </div>
+                <div class="P2">
+                    READ MORE
+                </div>
+            </div>
+                <br>
+                <br>
+            <div class="Template">
+                <div class="Text1">
+                    WELCOME TO TEMPLATE
+                </div>  
+                    <br>
+                    <br>
+                <div class="P3">
+                    Maecenas adipscing pellentesque elit eu volutpat. integer vitate <span style="color:#00ffff;"> pulvinar magna.</span>Lorem ipsum dolor sit amet, consectetur adipscing elit,
+                    <br>
+                    <span style="text-align: center;">Praesent auctor mi metus, nec sagittis purus ultrices id</span>.
+                </div>
+            </div>
+            <div class="celar"></div>
+                <br>
+                <br>
+                <a name="ABOUTUS"></a>    
+            <div class="AboutUs">
+                <div class="Text2">
+                    ABOUT US
+                </div>
+            </div>
+            <div class="clear"></div>
+                <br>
+                <br>
+            <div class="Template2">
+                <div class="Image2"> 
+                    <img src="myimage.jpg">
+                    <div class="Text3">
+                        <p>CHRISTIANA WELLDONE</p>
+                    </div>
+                    <div class="Txt1">
+                        <p>MARKETING DIRECTOR</p>
+                    </div>
+                </div>
+                <div class="Image3"> 
+                    <img src="background.jpg">
+                    <div class="Text4">
+                        <p>TERI BELLE</p>
+                    </div>
+                    <div class="Txt2">
+                        <p>CREATIVE EXCECUTIVE</p>
+                    </div>
+                </div>
+                <div class="Image4"> 
+                    <img src="background1.jpg">
+                    <div class="Text4">
+                        <p>TAWANA CHERRY</p>
+                    </div>
+                    <div class="Txt3">
+                        <p>COMAPNY PRESIDENT</p>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+                <br>
+                <br>
+            <div class="Text6">
+                <div class="system">
+                    <img src="system.png">
+                </div>
+                <div class="txt1">
+                    <h2>OUR MANAGEMENT TEAM</h2>
+                </div>
+                <div class="txt2">
+                    <p>This is a Mobile Website template which can be viewed in mobile devices Quisque in metus<br>
+                        trisrique, gravida dolor ut, Various neque.Maecenas ac risus aliquam,facilisis mass is,<br>
+                        vulputate elite,curabiture pretium arcu dictum, facibus diam quis, commodo turpis. Proin<br>
+                        viverra,risus eget egestas sodales,felis ante scelerisque ligula,eget condimentum diam<br>
+                        ligula eu tellus.</p>
+                    <br>
+                    <p>Lorom ipsum dolor sit amet, consectetur adipscing elit. Unde, exercitationem, laboriosam<br>
+                    modi non quisquam voluptas accusamas numquam  ipsum reiciendis saepe veniam<br>
+                    cupiditate explicabo autem. Repudiandae tempore dolore deserunt nemo voluptatum<br>
+                    consectetur aspernatur expedita aliqui isted illo enim molestias vel animi quod.</p>
+                </div>
+            </div>
+            <div class="clear"></div>
+                <br>
+                <br>
+             <a name="SERVICES"></a> 
+            <div class="Services">
+                <div class="Text7">
+                    SERVICES
+                </div>
+            </div>
+                <br>
+                <br>
+            <div class="Template3">
+                <div class="Template3 Text8">
+                    <p>The Best<br>
+                       Support Ever</p>
+                </div>
+                <div class="Template3 Text9">
+                    <p>Fully<br>
+                       Responsive Design</p>
+                </div>
+                <div class="Template3 Text10">
+                    <p>Unlimited<br>
+                       Layout options</p>
+                </div>
+            </div>
+            <div class="Text11">
+                <div class="Progress">
+                    <h2>OUR SKILLS</h2>
+                </div>
+                <div class="txt3">
+                    <p>Integer hendrerit erat sed tellus pretium, eu sodales eros dignissm. Duis augue eros,mollis<br>
+                       ac velit at,rutrum tincidunt ipsum. Morbi semper dui id fringilla semper. Etiam vulputate<br>
+                       sagittis vestibulum. Vivamus ac ante cursus, fegiut ipsum et,alique justo. Lorom ipsum<br>
+                       dolor sit amet, consectetur adipscing elit. lusto, minima soluta numquam perferendis illum<br>
+                       alias omnis commodi error veritais a esse nostrum asperiores recusandea.</p>
+                </div>
+            </div>
+                <br>
+                <br>
+             <a name="PROFILEPORTFOLIO"></a>
+            <div class="Portfolio">
+                <div class="Text12">
+                    PORTFOLIO
+                </div>
+            </div>
+                 <br>
+                <br>
+             <div class="Template4">
+                <div class="Image5"> 
+                    <img src="myimage.jpg">
+                    <div class="Text13">
+                        <p>FANTASY</p>
+                    </div>
+                </div>
+                <div class="Image6"> 
+                    <img src="background.jpg">
+                    <div class="Text14">
+                        <p>BOTANY</p>
+                    </div>
+                </div>
+                <div class="Image7"> 
+                    <img src="background1.jpg">
+                    <div class="Text15">
+                        <p>UNIVERSE</p>
+                    </div>
+                </div>
+                <br>
+                <div class="Image8"> 
+                    <img src="myimage.jpg">
+                    <div class="Text16">
+                        <p>CHANNEL</p>
+                    </div>
+                </div>
+                <div class="Image9"> 
+                    <img src="background.jpg">
+                    <div class="Text17">
+                        <p>DRAGONFLY</p>
+                    </div>
+                </div>
+                <div class="Image10"> 
+                    <img src="background1.jpg">
+                    <div class="Text18">
+                        <p>TITANIUM</p>
+                    </div>
+                </div>
+                <div class="loadmore">
+                    <div class="txt4">
+                        <p>LOAD MORE</p>
+                    </div>
+                </div>
+            </div>
+                <br>
+                <br>
+                <a name="CONTACT"></a>
+            <div class="Contact">
+                <div class="Text19">
+                    CONTACT US
+                </div>
+            </div>
+             <br>
+             <br>
+            <div class="responsive-iframe">
+                <div class="Map">
+                    <iframe  height="300" frameborder="1"  src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.maps.ie/route-planner.htm"></a>
+                </div>
+            </div>
+                 <br>
+                 <br>
+            <form method="POST">
+                <div class="Form">
+                    <div class="Input1">
+                        <label>Name:</label>
+                            <br>
+                        <input typte="text" name="txt" required>
+                    </div>
+                    <div class="Input2">
+                        <label>Email:</label>
+                            <br>
+                        <input type="email" name="Email" required>
+                    </div>
+                    <div class="Input3">
+                        <label>Subject:</label>
+                            <br>
+                        <input type="text" name="Submit">
+                    </div>
+                        <br>
+                    <div class="Input4">
+                        <label>Messages:</label>
+                            <br>
+                            <textarea name="Description" rows="20" cols="120" required></textarea>
+                    </div>
+                    <div class="Submit">
+                        <div class="Type">
+                            <input type="submit" value="Send Message">
+                        </div>
+                    </div>
+                </div>
+            </form>
+                <br>
+                <br>
+            <div class="Bottom">
+                <div class="icon">
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>
