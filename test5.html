@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test</title>
+        <meta name="viewport" content="width=device-width, intial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body {
+            margin:0;
+            padding:0;
+        }
+        .content1 {
+            background-color: #808080;
+            position: fixed;
+            width: 25%;
+            height: 200vh;
+        }
+
+        .div1 {
+            padding:10px;
+            background-color: white;
+        }
+
+        .Text1 {
+            text-align: center;
+            color: green;
+            font-family: cursive;
+            background-color: white;
+        }
+
+        .Div {
+            background-color:#a9a9a9;
+            color: #ffffff;
+            cursor:pointer;
+            text-align: center;
+            font-family: tahoma;
+            padding:8px;
+        }
+
+        .content2 {
+            margin-left: 25%;
+            height: 700px;
+        }
+
+        .Text2 {
+            position: absolute;
+            top: 10%;
+            left: 55%;
+            font-weight: bold;
+            font-size:20px;
+            font-family:sans-serif;
+            color:#800000;
+        } 
+
+        .Text3 {
+            position: absolute;
+            top: 20%;
+            left: 44%;
+            font-weight: bold;
+            font-size:20px;
+            font-family:sans-serif;
+            color:#0000ff;
+            text-align: center;
+        }   
+
+        .Text4 {
+            position: absolute;
+            font-weight: bold;
+            top:30%;
+            left:58%;
+            color: #ffffff;
+            padding: 20px;
+            display: inline;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            font-family: sans-serif;
+            background-color: #00ffff;
+        }
+
+        .Text5 {
+            text-align: center;
+            color:#00ffff;
+            font-weight: bold;
+            font-family:georgia;
+            font-size: 20px;
+        }
+
+        .Text6 {
+            text-align: center;
+            font-family:georgia;
+        }
+        .content3 {
+            
+            margin-left: 25%;
+            height: 1000px;
+        }
+
+        .div3 {
+            margin:20px;
+            padding:20px;
+            display:inline;
+            float:left;
+            width:80%;
+        }
+
+        .Text7 {
+            font-weight: bold;
+            color: #ffffff;
+            padding:20px;
+            margin:5px;
+            display:inline;
+            font-size:16px;
+            font-family:sans-serif;
+            background-color: #ffa500;
+            
+        }
+
+        .Images {
+            margin:40px;
+            
+        }
+        .Image1 {
+            height:50%;
+            padding:20px;
+            float: left;
+            margin:10px;
+        }
+
+        .Text8 {
+            color:#ffa500;
+            font-weight:bold;
+            font-size: 15px;
+            font-family:verdana;
+            text-align: center;
+        }
+
+        .Image2 {
+            height:50%;
+            padding:20px;
+            float: left;
+            margin:10px;
+        }
+
+        .Text9 {
+            color:#ffa500;
+            font-weight:bold;
+            font-size: 15px;
+            font-family:verdana;
+            text-align: center;
+        }
+
+        .Image3 {
+            height:50%;
+            padding:20px;
+            float: left;
+            margin:10px;
+        }
+
+        .Text10 {
+            color:#ffa500;
+            font-weight:bold;
+            font-size: 15px;
+            font-family:verdana;
+            text-align: center;
+        }
+
+        .Txt1, .Txt2, .Txt3 {
+            text-align: center;
+            font-family:verdana;
+        }
+
+        .Text11{
+            margin:20px;
+            float:left;
+        }
+
+        .Image4 {
+            float:right;
+            margin: 10px;
+        }
+
+        .Txt4 {
+            color:#ffa500;
+            font-size: 20px;
+            font-family:verdana;
+        }
+
+        .Txt5 {
+            font-size: 18px;
+            font-family:verdana;
+            word-spacing:10px;
+        }
+
+        .content4 {
+            margin-left: 25%;
+            height: 600px;
+        }
+
+        .div4 {
+            margin:20px;
+            padding: 20px;
+            display: inline;
+            float:left;
+        }
+
+        .Text12 {
+            font-weight: bold;
+            font-size:20px;
+            color: #ffffff;
+            padding:20px;
+            margin:5px;
+            display: inline;
+            font-size: 16px;
+            font-family: sans-serif;
+            background-color: #ee82ee;
+        }
+
+        .Template3 { 
+            padding: 20px;
+            display: inline;
+            margin:20px;
+            float: left;
+        }
+
+        .Text13 {
+            float:left;
+            margin:15px;
+            padding:10px;
+        }
+
+        .Text14 {
+            float:left;
+            margin:15px;
+            padding:10px;
+        }
+
+        .Text15 {
+            float:left;
+            margin:15px;
+            padding:10px;
+        }
+        .Text13, .Text14, .Text15 {
+            background-color: #ee82ee; 
+            font-family:verdana;
+            text-align: center;
+            color:white;
+        }
+        
+        .Text16 {
+            float: left;
+            margin:40px;
+            width:100%;
+        }
+
+        .Progress {
+            color:#ee82ee;
+            font-size: 20px;
+            font-family:verdana;
+        }
+
+        .Txt6 {
+            font-size: 18px;
+            font-family:verdana;
+            word-spacing:10px;
+            
+        }
+        .content5 {
+            
+            margin-left: 25%;
+            height: 900px;
+        }
+
+        .div5 {
+            margin:20px;
+            padding:20px;
+            display:inline;
+            float:left;
+            width:80%;
+        }
+
+        .Text17 {
+            font-weight: bold;
+            font-size:20px;
+            color: #ffffff;
+            padding:20px;
+            margin:5px;
+            display: inline;
+            font-size: 16px;
+            font-family: sans-serif;
+            background-color: aqua;
+        }
+
+        .Template4 { 
+            padding: 20px;
+            display:block;
+            margin: 30px;
+            float:left;
+        }
+        .Image5 {
+            height:50%;
+            padding:20px;
+            float: left;
+            margin:10px;
+        }
+
+        .Text18 {
+            color:green;
+            font-weight:bold;
+            font-size: 15px;
+            font-family:verdana;
+            text-align: center;
+        }
+
+        .Image6 {
+            height:50%;
+            padding:20px;
+            float: left;
+            margin:10px;
+        }
+
+        .Text19 {
+            color:green;
+            font-weight:bold;
+            font-size: 15px;
+            font-family:verdana;
+            text-align: center;
+        }
+
+        .Image7 {
+            height:50%;
+            padding:20px;
+            float: left;
+            margin:10px;
+        }
+
+        .Text20 {
+            color:green;
+            font-weight:bold;
+            font-size: 15px;
+            font-family:verdana;
+            text-align: center;
+        }
+
+       .Image8 {
+            height:50%;
+            padding:20px;
+            float: left;
+            margin:10px;
+        } 
+
+        .Text21 {
+            color:green;
+            font-weight:bold;
+            font-size: 15px;
+            font-family:verdana;
+            text-align: center;
+        }
+
+        .Image9 {
+            height:50%;
+            padding:20px;
+            float: left;
+            margin:10px;
+        } 
+
+        .Text22 {
+            color:green;
+            font-weight:bold;
+            font-size: 15px;
+            font-family:verdana;
+            text-align: center;
+        }
+
+        .Image10 {
+            height:50%;
+            padding:20px;
+            float: left;
+            margin:10px;
+        } 
+
+        .Text23 {
+            color:green;
+            font-weight:bold;
+            font-size: 15px;
+            font-family:verdana;
+            text-align: center;
+        }
+
+        .loadmore {
+            display: inline;
+            float: left;
+            margin-left:35%;
+        }
+
+        .Txt7 {
+            color: #ffffff;
+            padding:10px;
+            display: inline;
+            float: left;
+            font-size: 16px;
+            cursor: pointer;
+            font-family: verdana;
+            background-color: #00ffff
+        }
+
+
+        .content6 {
+            margin-left: 25%;
+            height: 1000px;
+        }
+
+        .div6 {
+            margin:20px;
+            padding:20px;
+            display:inline;
+            float:left;
+            width:80%;
+        }
+
+        .Text24 {
+            font-weight: bold;
+            font-size:20px;
+            color: #ffffff;
+            padding:20px;
+            margin:5px;
+            display: inline;
+            font-size: 16px;
+            font-family: sans-serif;
+            background-color: purple;
+        }
+
+        .Map {
+            float:left;
+            margin:0 80px;
+            width:80%;
+        }
+
+        .Form {
+            float:left;
+            margin-left:80px;
+            padding:10px;
+            width:80%;
+        }
+
+        .Input1 {
+            float:left;
+            padding:20px;
+            display:inline;
+            margin:0 40px;
+        }
+
+        .Input2 {
+            float:left;
+            padding:20px;
+            display:inline;
+            margin:0 40px;
+        }
+
+        .Input3 {
+            float:left;
+            padding:20px;
+            display:inline;
+            margin:0 40px;
+        }
+
+        .Input4 {
+            float:left;
+            padding:20px;
+            display:block;
+            margin:0 40px;
+        }
+
+        .Submit {
+            display: inline;
+            float:left;
+        }
+
+        .Type {
+            font-weight: bold;
+            padding:20px;
+            margin:5px;
+            display: inline;
+            font-size: 16px;
+            text-align:left;
+        }
+
+        [type="submit"] {
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: large;
+            font-family:verdana;
+            text-align:left;
+            padding:10px;
+            background-color:#d21dd8;
+            color:white;
+        }
+
+        .content7 {
+            background-color: gray;
+            margin-left: 25%;
+            height: 300px;
+        }
+
+        .div7 {
+            margin:40px;
+        }
+
+        
+
+        @media only screen and (min-width:200px) and (max-width:900px) {
+           body  {
+                width:100%;
+            }
+        }
+    </style>
+<body>
+    <div class="content1">
+        <div class="div1">
+            <img src="Circuit.jpg" width="350" height="100">
+        </div>
+        <div class="Text1">
+            FLOMIC
+        </div>
+        <div class="Div">
+            <div class="Div Home">
+                <p><a href="#Home" style="text-decoration:none;">HOME</a></p>
+            </div>
+                <hr>
+            <div class="Div Aboutus">
+                <p><a href="#ABOUTUS" style="text-decoration:none;">ABOUT US</a></p>
+            </div>
+                <hr>
+            <div class="Div Services">
+                <p><a href="#SERVICES" style="text-decoration:none;">SERVICES</a></p>
+            </div>
+                <hr>
+            <div class="Div Portfolio">
+                <p><a href="#PROFILEPORTFOLIO" style="text-decoration:none;">PROFILEPORTFOLIO</a></p>
+            </div>
+                <hr>
+            <div class="Div Contact">
+                <p><a href="#CONTACT" style="text-decoration:none;">CONTACT</a></p>
+            </div>
+        </div>
+    </div>    
+        <a name="Home"></a>
+    <div class="content2">
+        <div class="div2">
+            <img src="Nature.jpg" height="500" width="100%">
+        </div>
+        <div class="Text2">
+            REPOSITORY LAYOUT
+        </div>
+        <div class="Text3">
+            PELLENTESQUE HABITANT MORBI TRISTIQUE SENECTUS ET<br>
+            <span style="text-align: center;">NETUS MALESUDA FAMES</span>.
+        </div>
+        <div class="Text4">
+            READ MORE
+        </div>
+            <br>
+            <br>
+        <div class="Text5">
+            WELCOME TO TEMPLATE
+        </div>  
+            <br>
+            <br>
+        <div class="Text6">
+            Maecenas adipscing pellentesque elit eu volutpat. integer vitate <span style="color:#00ffff;"> pulvinar magna.</span>Lorem ipsum dolor sit amet, consectetur adipscing elit,
+                <br>
+            <span style="text-align: center;">Praesent auctor mi metus, nec sagittis purus ultrices id</span>.
+        </div>
+    </div>
+        <a name="ABOUTUS"></a>
+    <div class="content3">
+        <div class="div3">
+            <div class="Text7">ABOUT US</div>
+        </div>
+            <br>
+            <br>
+        <div class="Images">
+            <div class="Image1"> 
+                <img src="myimage.jpg">
+                <div class="Text8">
+                    <p>CHRISTIANA WELLDONE</p>
+                </div>
+                <div class="Txt1">
+                    <p>MARKETING DIRECTOR</p>
+                </div>
+            </div>
+            <div class="Image2"> 
+                <img src="background.jpg">
+                <div class="Text9">
+                    <p>TERI BELLE</p>
+                </div>
+                <div class="Txt2">
+                    <p>CREATIVE EXCECUTIVE</p>
+                </div>
+            </div>
+            <div class="Image3"> 
+                <img src="background1.jpg">
+                <div class="Text10">
+                    <p>TAWANA CHERRY</p>
+                </div>
+                <div class="Txt3">
+                    <p>COMAPNY PRESIDENT</p>
+                </div>
+            </div>
+        </div>
+            <br>
+            <br>
+        <div class="Text11">
+            <div class="Image4">
+                <img src="system.png">
+            </div>
+            <div class="Txt4">
+                <h2>OUR MANAGEMENT TEAM</h2>
+            </div>
+            <div class="Txt5">
+                <p>This is a Mobile Website template which can be viewed in mobile devices Quisque in metus<br>
+                    trisrique, gravida dolor ut, Various neque.Maecenas ac risus aliquam,facilisis mass is,<br>
+                    vulputate elite,curabiture pretium arcu dictum, facibus diam quis, commodo turpis. Proin<br>
+                    viverra,risus eget egestas sodales,felis ante scelerisque ligula,eget condimentum diam<br>
+                    ligula eu tellus.</p>
+                    <br>
+                    <p>Lorom ipsum dolor sit amet, consectetur adipscing elit. Unde, exercitationem, laboriosam<br>
+                    modi non quisquam voluptas accusamas numquam  ipsum reiciendis saepe veniam<br>
+                    cupiditate explicabo autem. Repudiandae tempore dolore deserunt nemo voluptatum<br>
+                    consectetur aspernatur expedita aliqui isted illo enim molestias vel animi quod.</p>
+            </div>
+        </div>
+    </div>
+        <a name="SERVICES"></a>
+    <div class="content4">
+        <div class="div4">
+            <div class="Text12">SERVICES</div>
+        </div>
+            <br>
+            <br>
+        <div class="Template3">
+            <div class="Template Text13">
+                <p>The Best<br>
+                    Support Ever</p>
+            </div>
+            <div class="template Text14">
+                <p>Fully<br>
+                    Responsive Design</p>
+            </div>
+            <div class="Template Text15">
+                <p>Unlimited<br>
+                    Layout options</p>
+            </div>
+        </div>
+        <div class="Text16">
+            <div class="Progress">
+                <h2>OUR SKILLS</h2>
+            </div>
+            <div class="Txt6">
+                 <p>Integer hendrerit erat sed tellus pretium, eu sodales eros dignissm. Duis augue eros,mollis<br>
+                    ac velit at,rutrum tincidunt ipsum. Morbi semper dui id fringilla semper. Etiam vulputate<br>
+                    sagittis vestibulum. Vivamus ac ante cursus, fegiut ipsum et,alique justo. Lorom ipsum<br>
+                    dolor sit amet, consectetur adipscing elit. lusto, minima soluta numquam perferendis illum<br>
+                    alias omnis commodi error veritais a esse nostrum asperiores recusandea.</p>
+            </div>
+        </div>
+    </div>
+        <a name="PROFILEPORTFOLIO"></a>
+    <div class="content5">
+        <div class="div5">
+            <div class="Text17">PORTFOLIO</div>
+        </div>
+            <br>
+            <br>
+        <div class="Template4">
+            <div class="Image5"> 
+                <img src="myimage.jpg">
+                <div class="Text18">
+                    <p>FANTASY</p>
+                </div>
+            </div>
+            <div class="Image6"> 
+                <img src="background.jpg">
+                <div class="Text19">
+                    <p>BOTANY</p>
+                </div>
+            </div>
+            <div class="Image7"> 
+                <img src="background1.jpg">
+                <div class="Text20">
+                    <p>UNIVERSE</p>
+                </div>
+            </div>
+                <br>
+            <div class="Image8"> 
+                <img src="myimage.jpg">
+                <div class="Text21">
+                    <p>CHANNEL</p>
+                </div>
+            </div>
+            <div class="Image9"> 
+                <img src="background.jpg">
+                <div class="Text22">
+                    <p>DRAGONFLY</p>
+                </div>
+            </div>
+            <div class="Image10"> 
+                <img src="background1.jpg">
+                <div class="Text23">
+                    <p>TITANIUM</p>
+                </div>
+            </div>
+            <div class="loadmore">
+                <div class="Txt7">
+                    <p>LOAD MORE</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a name="CONTACT"></a>
+    <div class="content6">
+        <div class="div6">
+            <div class="Text24">CONTACT US</div>
+        </div>
+            <br>
+             <br>
+        <div class="responsive-iframe">
+            <div class="Map">
+                <iframe  height="300" width="100%" frameborder="1"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27699.75831255139!2d80.21669937365206!3d13.068044576372907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d3361%3A0x6e61a70b6863d433!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1606715256311!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></a>
+            </div>
+        </div>
+            <br>
+            <br>
+        <form method="POST">
+            <div class="Form">
+                <div class="Input1">
+                    <label>Name:</label>
+                        <br>
+                    <input typte="text" name="txt" required>
+                </div>
+                <div class="Input2">
+                    <label>Email:</label>
+                        <br>
+                    <input type="email" name="Email" required>
+                </div>
+                <div class="Input3">
+                    <label>Subject:</label>
+                        <br>
+                    <input type="text" name="Submit">
+                </div>
+                    <br>
+                <div class="Input4">
+                    <label>Messages:</label>
+                        <br>
+                    <textarea name="Description" rows="20" cols="120" required></textarea>
+                </div>
+                <div class="Submit">
+                    <div class="Type">
+                        <input type="submit" value="Send Message">
+                    </div>
+                </div>
+            </div>
+         </form>
+    </div>
+    <div class="content7">
+        <div class="div7">
+            
+            
+        </div>
+    </div>
+</body>
+</html>
